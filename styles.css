@@ -50,10 +50,14 @@ body{
 
 }
 .gameBox{
-    background-color: red;
+    /* background-color: red; */
     /* width: 6.25%;
     height: 6.25%; */
 
+}
+
+button {
+    margin-bottom: 2rem;
 }
 
 /* for button */

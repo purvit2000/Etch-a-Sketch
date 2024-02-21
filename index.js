@@ -16,11 +16,27 @@ const gridGame = (choice) => {
     box.forEach(function (box) {
 
         box.addEventListener("mouseover", function (event) {
-            // Change the background color to lightgreen
-            event.target.style.backgroundColor = "lightgreen";
+
+            event.target.style.backgroundColor = "black";
         })
     });
+    // box.forEach(function (box) {
+
+    //     box.onmousedown = function (event) {
+
+    //         event.target.style.backgroundColor = "black";
+    //     }
+    // });
 }
+
+const clearBox = () => {
+   
+    const box = document.querySelectorAll('.gameBox');
+    box.forEach(function (box) {
+        box.style.backgroundColor = "white";
+    });
+}
+
 const startGame = () => {
 
     let choice = parseInt(prompt("how many grids do you want (0 to 100)?"));
@@ -33,18 +49,8 @@ const startGame = () => {
         alert("Invalid input.");
     }
 
-
 }
+
+
 gridGame(16);
 
-// const box = document.querySelectorAll('.gameBox');
-
-// box.forEach(function (box) {
-
-//     box.addEventListener("mouseover", function (event) {
-//         // Change the background color to lightgreen
-//         event.target.style.backgroundColor = "lightgreen";
-//     })
-// });
-
-// document.getElementsByClassName
